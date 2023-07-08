@@ -25,6 +25,6 @@ public class EmployeeLoginFunctionality extends Base {
     public void verify_i_am_in_employee_home_page() {
 
      String empIdMsg = getText(EmployeeHomePage.employeeIdMsg);
-     assertEquals("Employee Id: 102",empIdMsg);
+     assertEquals("Welcome Test", empIdMsg);
     }
 }
