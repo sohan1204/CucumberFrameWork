@@ -8,9 +8,12 @@ target/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+.idea
 *.iws
 *.iml
 *.ipr
+.allure
+test-output
 
 ### Eclipse ###
 .apt_generated
