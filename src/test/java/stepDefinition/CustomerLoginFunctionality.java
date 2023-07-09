@@ -40,8 +40,8 @@ public class CustomerLoginFunctionality extends Base {
         click( CustomerLoginPage.btnCustomerLogin );
     }
 
-    @Then("Verify I am in Customer Home Pageb")
-    public void verify_i_am_in_customer_home_pageb() {
+    @Then("Verify I am in Customer Home Page")
+    public void verify_i_am_in_customer_home_page() {
         String welcomeMsg = getText( CustomerHomePage.labelWelcomeMsg );
         assertEquals( "Welcome David", welcomeMsg);
     }
