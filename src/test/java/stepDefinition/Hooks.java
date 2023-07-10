@@ -6,15 +6,24 @@ import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import static Util.readFile.loadPropertiesFile;
+
 public class Hooks extends Base {
+
 
     @Before
     public void setup() {
         WebDriverManager.chromedriver().setup();
         //WebDriver driver;
-
         driver = new ChromeDriver();
     }
+
+
 
     @After
     public void tearDown() throws InterruptedException {
